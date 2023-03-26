@@ -13,6 +13,7 @@ com\portfolio\mgb\Controller\CHys.class
 com\portfolio\mgb\Entity\Persona.class
 com\portfolio\mgb\Security\Dto\NuevoUsuario.class
 com\portfolio\mgb\Security\Jwt\JwtEntryPoint.class
+.netbeans_automatic_build
 com\portfolio\mgb\Dto\dtoPersona.class
 com\portfolio\mgb\Service\Seducacion.class
 com\portfolio\mgb\Controller\CEducacion.class
