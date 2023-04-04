@@ -12,11 +12,13 @@ import java.util.Set;
  * @author Lucas
  */
 public class NuevoUsuario {
-    private String nombre;
-    private String nombreUsuario;
+     private String nombre;
+    private String alias;
     private String email;
-    private String password;
+    private String password;       
     private Set<String> roles = new HashSet<>();
+    
+    //Getters and setters
 
     public String getNombre() {
         return nombre;
@@ -26,12 +28,12 @@ public class NuevoUsuario {
         this.nombre = nombre;
     }
 
-    public String getNombreUsuario() {
-        return nombreUsuario;
+    public String getAlias() {
+        return alias;
     }
 
-    public void setNombreUsuario(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
+    public void setAlias(String alias) {
+        this.alias = alias;
     }
 
     public String getEmail() {
@@ -57,7 +59,7 @@ public class NuevoUsuario {
     public void setRoles(Set<String> roles) {
         this.roles = roles;
     }
-    
-    
+
+   
     
 }

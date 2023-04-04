@@ -4,6 +4,7 @@
  */
 package com.portfolio.mgb.Security.Dto;
 
+
 import javax.validation.constraints.NotBlank;
 
 /**
@@ -12,25 +13,29 @@ import javax.validation.constraints.NotBlank;
  */
 public class LoginUsuario {
     @NotBlank
-    private String nombreUsuario;
+    private String alias;
     @NotBlank
-    private String password;
+    private String Password;
+    
+    
+    //Getters and setters
 
-    public String getNombreUsuario() {
-        return nombreUsuario;
+    public String getAlias() {
+        return alias;
     }
 
-    public void setNombreUsuario(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
+    public void setAlias(String alias) {
+        this.alias = alias;
     }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String Password) {
+        this.Password = Password;
     }
-    
+
+
     
 }

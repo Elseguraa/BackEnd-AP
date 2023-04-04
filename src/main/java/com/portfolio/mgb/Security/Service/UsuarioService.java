@@ -14,24 +14,29 @@ import org.springframework.stereotype.Service;
 @Service
 @Transactional
 public class UsuarioService {
-    @Autowired
-    iUsuarioRepository iusuarioRepository;
+    @Autowired 
+    iUsuarioRepository iusuarioRepositorio;
     
-    public Optional <Usuario> getByNombreUsuario(String nombreUsuario) {
-        return iusuarioRepository.findByNombreUsuario(nombreUsuario);
-    }
     
-    public boolean existsByNombreUsuario(String nombreUsuario) {
-        return iusuarioRepository.existsByNombreUsuario(nombreUsuario);
-    }
-    
-    public boolean existsByEmail(String email) {
-        return iusuarioRepository.existsByEmail(email);
-    }
-    
-    public void save (Usuario usuario) {
-        iusuarioRepository.save(usuario);
+    public  Optional<Usuario> getByalias(String alias){
+        return iusuarioRepositorio.findByalias(alias);
     }
     
     
+    
+    
+    public boolean  existsbyalias(String alias){
+        return iusuarioRepositorio.existsByalias(alias);
+    }
+    
+     public boolean  existsbyEmail(String Email){
+        return iusuarioRepositorio.existsByEmail(Email);
+    }
+     
+     
+     public void save (Usuario usuario){
+         iusuarioRepositorio.save(usuario);
+     }
+
+  
 }

@@ -14,14 +14,15 @@ import org.springframework.security.core.userdetails.UserDetails;
 public class UsuarioPrincipal implements UserDetails {
 
     private String nombre;
-    private String nombreUsuario;
+    private String alias;
     private String email;
     private String password;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UsuarioPrincipal(String nombre, String nombreUsuario, String email, String password, Collection<? extends GrantedAuthority> authorities) {
+    //constructor
+    public UsuarioPrincipal(String nombre, String alias, String email, String password, Collection<? extends GrantedAuthority> authorities) {
         this.nombre = nombre;
-        this.nombreUsuario = nombreUsuario;
+        this.alias = alias;
         this.email = email;
         this.password = password;
         this.authorities = authorities;
@@ -29,10 +30,8 @@ public class UsuarioPrincipal implements UserDetails {
 
     public static UsuarioPrincipal build(Usuario usuario) {
         List<GrantedAuthority> authorities = usuario.getRoles().stream()
-                .map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors
-                .toList());
-
-        return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(), usuario.getPassword(), authorities);
+                .map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
+        return new UsuarioPrincipal(usuario.getNombre(), usuario.getAlias(), usuario.getEmail(), usuario.getPassword(), authorities);
 
     }
 
@@ -46,17 +45,17 @@ public class UsuarioPrincipal implements UserDetails {
         return password;
     }
 
-    public String getNombre() {
+    public String getnombre() {
         return nombre;
     }
 
-    public String getEmail() {
+    public String getemail() {
         return email;
     }
 
     @Override
     public String getUsername() {
-        return nombreUsuario;
+        return alias;
     }
 
     @Override
@@ -78,5 +77,4 @@ public class UsuarioPrincipal implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
-
 }

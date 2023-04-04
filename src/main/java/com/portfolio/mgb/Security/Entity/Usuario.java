@@ -21,30 +21,34 @@ import javax.validation.constraints.NotNull;
 
 public class Usuario {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private int id;
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id ;
+   @NotNull
+    private  String nombre;
+   @NotNull
+   @Column(unique = true)
+   private  String alias;
+    @NotNull 
+   private  String email;
     @NotNull
-   private String nombre;
-    @NotNull
-    @Column(unique = true)
-   private String nombreUsuario;
-    @NotNull
-   private String email;
-    @NotNull
-   private String password;
+    private  String password;
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name ="usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
-    private Set<Rol> roles = new HashSet<>();
+    @JoinTable(name = "usuario_rol" , joinColumns = @JoinColumn(name = "usuario_id") ,inverseJoinColumns = @JoinColumn(name = "rol_id"))
+private  Set<Rol> roles = new HashSet<>();
+    
+    //constructor
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String nombreUsuario, String email, String password) {
+    public Usuario(String nombre, String alias, String email, String password) {
         this.nombre = nombre;
-        this.nombreUsuario = nombreUsuario;
+        this.alias = alias;
         this.email = email;
         this.password = password;
     }
+    
+     //getter and setter
 
     public int getId() {
         return id;
@@ -62,12 +66,12 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getNombreUsuario() {
-        return nombreUsuario;
+    public String getAlias() {
+        return alias;
     }
 
-    public void setNombreUsuario(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
+    public void setAlias(String alias) {
+        this.alias = alias;
     }
 
     public String getEmail() {
@@ -93,6 +97,7 @@ public class Usuario {
     public void setRoles(Set<Rol> roles) {
         this.roles = roles;
     }
-    
-    
+
+
+
 }

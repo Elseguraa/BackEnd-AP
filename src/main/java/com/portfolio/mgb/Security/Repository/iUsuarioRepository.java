@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface iUsuarioRepository extends JpaRepository<Usuario, Integer>{
-    Optional<Usuario> findByNombreUsuario(String nombreUsuario);
-    
-    boolean existsByNombreUsuario(String nombreUsuario);
-    boolean existsByEmail(String email);
+    Optional<Usuario> findByalias(String alias);
+    boolean existsByalias(String alias);
+    boolean existsByEmail(String Email);
 }

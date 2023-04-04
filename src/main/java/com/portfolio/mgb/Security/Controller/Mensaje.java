@@ -7,7 +7,10 @@ package com.portfolio.mgb.Security.Controller;
 
 public class Mensaje {
     
-    private String mensaje;
+    private  String mensaje;
+    
+    
+    //constructor 
 
     public Mensaje() {
     }
@@ -15,6 +18,8 @@ public class Mensaje {
     public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
+    
+    //Getters and setters
 
     public String getMensaje() {
         return mensaje;
@@ -23,8 +28,5 @@ public class Mensaje {
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
-    
-    
     
 }
