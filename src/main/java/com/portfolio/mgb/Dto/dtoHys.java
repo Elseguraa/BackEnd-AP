@@ -15,7 +15,7 @@ public class dtoHys {
     @NotBlank
     private String nombre;
     @NotBlank
-    private int  porcentaje;
+    private int porcentaje;
 
     public dtoHys() {
     }
@@ -40,6 +40,5 @@ public class dtoHys {
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
     }
-    
-    
+
 }

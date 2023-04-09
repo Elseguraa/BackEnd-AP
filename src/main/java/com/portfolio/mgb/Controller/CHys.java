@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = {"https://argp-frontend.web.app","http://localhost:4200"})
-@RequestMapping("/hys")
+@RequestMapping("/habilidad")
 public class CHys {
     
     @Autowired
@@ -65,7 +65,6 @@ public class CHys {
         }
 
         hys hYs = new hys(dtohys.getNombre(), dtohys.getPorcentaje());
-                
         shys.save(hYs);
 
         return new ResponseEntity(new Mensaje("habilidad agregada"), HttpStatus.OK);
