@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = {"https://frontendxds.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://argp-frontend.web.app","http://localhost:4200"})
 public class CoExperiencia {
      @Autowired
     ServExperiencia ServExperiencia;
