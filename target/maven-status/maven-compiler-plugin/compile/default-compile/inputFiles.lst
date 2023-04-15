@@ -4,6 +4,9 @@ D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Dto\Log
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\WebConfig.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Repository\REducacion.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Entity\Educacion.java
+D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Entity\Experiencia.java
+D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Controller\CoExperiencia.java
+D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Dto\DtoExperiencia.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Controller\AuthController.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Entity\UsuarioPrincipal.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Entity\Persona.java
@@ -12,6 +15,7 @@ D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Enums\R
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Entity\Rol.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Entity\hys.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Repository\Rhys.java
+D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Repository\ExperienciaRepo.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Controller\Mensaje.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Service\UsuarioService.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Controller\CHys.java
@@ -31,5 +35,6 @@ D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Reposit
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Repository\iRolRepository.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Dto\dtoHys.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Security\Dto\JwtDto.java
+D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Service\ServExperiencia.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\Controller\PersonaController.java
 D:\ArgentinaPrograma\BackEnd-AP\src\main\java\com\portfolio\mgb\MgbApplication.java
